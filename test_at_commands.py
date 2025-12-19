@@ -17,5 +17,7 @@ send_at_command(ser, "AT")  # Basic test
 send_at_command(ser, "AT+GMR")  # Get version
 send_at_command(ser, "AT+CWMODE?")  # Get WiFi mode
 send_at_command(ser, "AT+CMD?", 2)  # List available commands
+send_at_command(ser, "AT+USERRAM?")
+send_at_command(ser, "AT+FWMEMINFO?") 
 
 ser.close()
